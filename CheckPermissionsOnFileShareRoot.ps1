@@ -19,10 +19,10 @@ foreach ($share in $shares) {
 
 foreach($success in $TestPathSuccess){
 	try {
-    	Get-ChildItem $sharePath -ErrorAction Stop | Select-Object -first 5 | Out-Null
+    	Get-ChildItem $success -ErrorAction Stop | Select-Object -first 5 | Out-Null
     	$Allowed += $success
 	} catch {
-    	$Denied += $sharePath
+    	$Denied += $success
 	}
 }
 
