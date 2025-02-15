@@ -228,5 +228,5 @@ $emailTo = @(
 	"first.last@domain.com"#,
 	#"first.last2@domain.com"
 )
-$smtpServer = "mxrelay.doe.gov"
+$smtpServer = "mail.domain.com"
 Send-MailMessage -From $emailFrom -To $emailTo -Subject "Disk Report" -Body $HtmlReport -SmtpServer $smtpServer -BodyAsHtml
