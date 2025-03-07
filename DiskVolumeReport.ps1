@@ -221,7 +221,7 @@ $HtmlReport += @"
 "@
 
 # Email with HTML Report as body.
-#$HtmlReport | Out-File "E:\ADM\Dupy\Scripts\VolumeReport.html" -Encoding utf8
+#$HtmlReport | Out-File "E:\Scripts\VolumeReport.html" -Encoding utf8
 
 $emailFrom = "NoReply@domain.com"
 $emailTo = @(
